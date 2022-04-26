@@ -36,6 +36,25 @@ public class Mamifero extends Animal {
     public int cantidadMamiferos() {
         return listado.size();
     }
+    public static void setListado(ArrayList<Mamifero> listado) {
+        Mamifero.listado = listado;
+    }
+
+    public boolean isPelaje() {
+        return pelaje;
+    }
+
+    public void setPelaje(boolean pelaje) {
+        this.pelaje = pelaje;
+    }
+
+    public int getPatas() {
+        return patas;
+    }
+
+    public void setPatas(int patas) {
+        this.patas = patas;
+    }
 
 
 

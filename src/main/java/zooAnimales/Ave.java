@@ -38,11 +38,16 @@ public class Ave extends Animal{
         listado.add(aguila);
         return aguila;
     }
+    public static void setListado(ArrayList<Ave> listado) {
+        Ave.listado = listado;
+    }
 
+    public String getColorPlumas() {
+        return colorPlumas;
+    }
 
-    
-
-    
-
+    public void setColorPlumas(String colorPlumas) {
+        this.colorPlumas = colorPlumas;
+    }
 
 }

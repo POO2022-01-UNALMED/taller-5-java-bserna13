@@ -12,15 +12,16 @@ public class Zoologico {
     public Zoologico(String nombre, String ubicacion ){
         this.nombre=nombre;
         this.ubicacion=ubicacion;
-
-    }
-        
+    }   
     public Zoologico(){}
 
     public int cantidadTotalAnimales(){
-        return Animal.totalAnimales;
+        int tot = 0;
+        for (Zona i : zonas){
+            tot += i.cantidadAnimales();
+        }
+        return tot;
     }
-
     public void agregarZonas(Zona zona){
         this.zonas.add(zona);
     }
