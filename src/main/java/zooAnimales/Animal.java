@@ -27,5 +27,12 @@ public class Animal {
 				"Peces: "+Pez.getListado().size()+"\n" + 
 				"Anfibios: "+Anfibio.getListado().size();
     }
+    public String toString(){
+        return "Mi nombre es "+ this.nombre + ", tengo una edad de " +this.edad+ ", habito en "+this.habitat+" y mi genero es " + this.genero + (this.zona != null ? ", la zona en la que me ubico es "+this.zona+", en el "+this.zona.getZoo() : "");
+    }
+
+    public String movimiento() {
+        return "desplazarse";
+    }
     
 }
